@@ -24,19 +24,22 @@ public class DayofMonth {
                         case 10:
                         case 12:
                             System.out.println("this " + month + "month have 31 days");
+                            run = false;
                             break;
                         case 2:
                             System.out.println("this " + month + "month have 28 or 29 days");
+                            run = false;
                             break;
                         case 4:
                         case 6:
                         case 9:
                         case 11:
                             System.out.println("this " + month + "month have 30 days");
+                            run = false;
                             break;
                         default:
                             System.out.println("invalid month");
                     }
-                }
+            }
     }
 }
